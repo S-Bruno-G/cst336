@@ -21,6 +21,10 @@ in html
                 height: 5px;
                 background: #333;
             }
+            
+            a {
+                display: block;
+            }
         </style>
         
     </head>
@@ -30,21 +34,38 @@ in html
     <!-- This is where we place the content of our website -->
     <body>
         <header>
-            <h1> Santiago Bruno </h1>
+            <h1> Santiago Bruno </h1>  <!-- block tag-->
+            <h2> My ePortfolio </h2>
         </header>
         
         <hr>
         
         <nav>
-            <a href="index.html"> Home </a>
+            <a href="index.html"> Home </a>  <!-- inline tag-->
             <a href="about.html"> About </a>
             <a href="contact.html"> Contact Me </a>
         </nav>
         
+        <main>
+            
+            <figure> 
+            
+                <img src="img/juan_doe.png">
+                
+            </figure>
+            
+        </main>
+        
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
+        <hr>
+        
         <footer>
+            &copy; 2018 Santiago Bruno<br />
+            <strong> Disclaimer: </strong> The information in this website is fake. It's used for academic purposes.
+            <br />
             
+            <img src="/cst336/hw/img/csumb_logo.jpg" alt= "CSUMB logo" title="This is a CSUMB logo." />
             
         </footer>
         <!-- closing footer -->
