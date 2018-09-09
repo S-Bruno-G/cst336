@@ -32,44 +32,50 @@ in html
         <hr>
         
         <nav id = "navMenu">
-            <a href="index.html" class = "active-page"> Home </a>  <!-- inline tag-->
-            <a href="about.html"> About </a>
+            <a href="index.html"> Home </a>  <!-- inline tag-->
+            <a href="about.html" class = "active-page"> About </a>
             <a href="contact.html"> Contact Me </a>
         </nav>
         
         
-        <main>
-            
+        <div id = "content"> 
+            <table>
+                <tr id = "tableHeader">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong>Years Experience</strong></td>
+                </tr>
+                
+                <tr class = "table-row">
+                    <td>C++</td>
+                    <td>2 semester</td>
+                </tr>
+                
+                <tr class = "table-row">
+                    <td>Java</td>
+                    <td>1 semester</td>
+                </tr>
+                
+                <tr class = "table-row">
+                    <td>Python</td>
+                    <td>1 semester</td>
+                </tr>
+            </table>
             <br>
-            
-            <figure id = "me"> 
-                <img src="img/TMNT.jpg" alt="Picture of TMNT" />
-            </figure>
-            
-            <div id = "welcomeText">
-                Hello! <br />
-                <p> Thank you for visiting my pro portfolio website.</p>
-                <p> I am a Student at CSUMB.</p>
-                <p> Don't feel free to contact me!</p>
-                
-                <br /> <br />
-                
-                <em>"You need to feel <strong>death</strong> before you can feel <strong>alive</strong>."</em><br />
-                - Sam
-                
-            </div>
-            
-        </main>
-        
+            <ul>
+                <li><span class = "hobby">Video Games</span>: I like all kinds of games but my favorite is FIFA.</li>
+                <li><span class = "hobby">Soccer</span>: I like playing and watching soccer.</li>
+                <li><span class = "hobby">Music</span>: Fan of both Spanish and English music, favorite artist is NAV.</li>
+            </ul>
+        </div>
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
         
         <footer>
-            CST336 Internet Programming. 2018
             &copy; 2018 Santiago Bruno<br />
             <strong> Disclaimer: </strong> The information in this website is fictitous. It's used for academic purposes only.
             <br />
-            <img src = "img/csumb_logo.jpg" alt = "CSUMB logo" title = "This is the CSUMB logo" width = "50px" />
+            
+            
         </footer>
         <!-- closing footer -->
         

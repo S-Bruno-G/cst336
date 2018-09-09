@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    color: aqua;
+}
+
+footer {
+    color: white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: pink;
+}
+
+nav a:hover {
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+    transition: .9s;
+}
+
+#me {
+    display: inline-block;
+    /*float: left;*/
+}
+#welcomeText {
+    display: inline-block;
+    /*float: left;*/
+}
+
+#navMenu .active-page {
+    background-color: white;
+}
+
+footer {
+    clear: left;
+}
+
+table {
+    alignment-baseline: central;
+    margin: 0px auto;
+}
+
+ul {
+    text-align: left;
+    margin: 0px auto;
+    font-size: 1.3em;
+    padding-left: 450px;
+}
+
+td {
+    padding-left: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#tableHeader {
+    background-color: #0073e6;
+}
+
+.table-row {
+    background-color: #e68a00;
+}
+
+.hobby {
+    color: orange;
+}
+
+iframe {
+    padding-left: 400px;
+}
