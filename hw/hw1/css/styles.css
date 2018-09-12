@@ -42,3 +42,8 @@ nav a:hover {
 .keyWords {
     color: orange;
 }
+
+.image {
+    margin-left: 10px;
+    margin-right: 10px;
+}
