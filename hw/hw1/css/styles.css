@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: aqua;
+}
+
+header {
+    font-size: 25px;
+}
+
+footer {
+    color: white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: pink;
+}
+
+nav a:hover {
+    border-bottom: 2px solid green;
+    font-size: 2em;
+    transition: .9s;
+}
+
+#navMenu .active-page {
+    color: #808000;
+}
+
+#welcomeText {
+    font-size: 40px;
+}
+
+.keyWords {
+    color: orange;
+}
