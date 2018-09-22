@@ -1,0 +1,6 @@
+[17-Sep-2018 19:19:13 UTC] PHP Parse error:  syntax error, unexpected 'i' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 76
+[17-Sep-2018 19:19:21 UTC] PHP Parse error:  syntax error, unexpected 'i' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 76
+[17-Sep-2018 19:39:02 UTC] PHP Parse error:  syntax error, unexpected 'randomPick1' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 72
+[17-Sep-2018 19:39:23 UTC] PHP Parse error:  syntax error, unexpected 'randomPick1' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 72
+[17-Sep-2018 19:41:26 UTC] PHP Parse error:  syntax error, unexpected 'randomPick1' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 72
+[17-Sep-2018 19:41:28 UTC] PHP Parse error:  syntax error, unexpected 'randomPick1' (T_STRING), expecting ';' in /home/ubuntu/workspace/cst336/practice/practice2/rps.php on line 72

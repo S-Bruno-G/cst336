@@ -1,0 +1,2 @@
+[12-Sep-2018 22:13:00 UTC] PHP Parse error:  syntax error, unexpected '");"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/review/randomColor.php on line 26
+[12-Sep-2018 22:13:00 UTC] PHP Parse error:  syntax error, unexpected '");"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ubuntu/workspace/cst336/labs/lab2/review/randomColor.php on line 26

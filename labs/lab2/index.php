@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @import url("css/styles.css");
+        </style>
+        
         <title> 777 Slot Machine </title>
     </head>
     <body>
         
-        <?php
-        
-        function displaySymbol($random_value) {
+        <div id="main">
+            <?php include 'functions.php';
+                play();
+            ?>
             
-            switch($random_value) {
-                case 0: $symbol = "seven";
-                        break;
-                case 1: $symbol = "orange";
-                        break;
-                case 2: $symbol = "cherry";
-                        break;
-            }
-            
-            
-            echo "<img src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)."'>";
-        }
-        
-        $random_value1 = rand(0,2);
-        displaySymbol($random_value1);
-        $random_value2 = rand(0,2);
-        displaySymbol($random_value2);
-        $random_value3 = rand(0,2);
-        displaySymbol($random_value3);
-        
-        ?>
-
-
+            <form>
+                <input type="submit" name="Spin!"/>
+            </form>
+        </div>
     </body>
+    <br>
+    <br>
+    <br>
+    <footer>
+        CST336 Internet Programming. 2018
+        &copy; 2018 Santiago Bruno<br />
+        <strong> Disclaimer: </strong> The information in this website is fictitous. It's used for academic purposes only.
+        <br />
+        <img src = "img/csumb_logo.jpg" alt = "CSUMB logo" title = "This is the CSUMB logo" width = "50px" />
+        <img src = "img/buddy.png" alt = "Buddy verification logo" title = "This is the Buddy verification logo" width = "50px" />
+    </footer>
 </html>
