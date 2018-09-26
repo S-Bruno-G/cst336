@@ -40,15 +40,15 @@
     }
     
     
-    #output{
-     width:600px;   
-     margin:0 auto;
-     position:absolute;
+    /*#output{*/
+    /* width:600px;   */
+    /* margin:0 auto;*/
+    /* position:absolute;*/
      
-     top:450px;
-     font-size:1.5em;
-     line-height: .7em;
-    }
+    /* top:450px;*/
+    /* font-size:1.5em;*/
+    /* line-height: .7em;*/
+    /*}*/
     
     footer{
         font-family: "Times New Roman", Georgia, Serif;
