@@ -11,7 +11,13 @@
         <!--<center><img src = "fifaCard.png" alt = "fifa card" title = "fifa logo" width = "25%"/></center>-->
         <div id="main">
             <?php include 'functions.php';
-                image(0);
+                $pics = array();
+                for($i = 0; $i < 4; $i++) {
+                    array_push($pics, $i);
+                }
+                sort($pics);
+                shuffle($pics);
+                image($pics[0]);
             ?>
             
             <!--<form>-->
@@ -25,38 +31,31 @@
                     <!--<td><strong>Years Experience</strong></td>-->
                 </tr>
                 
-                <tr class = "table-row">
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
+                <tr class="table-row">
+                    <?php
+                    for($i = 0; $i < 2; $i++) {
+                        attributes();
+                    }
+                    ?>
                 </tr>
                 
-                <tr class = "table-row">
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
+                <tr class="table-row">
+                    <?php
+                    for($i = 0; $i < 2; $i++) {
+                        attributes();
+                    }
+                    ?>
+                    <!--</td>-->
                 </tr>
                 
-                <tr class = "table-row">
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
-                    <td><?php
-                            echo rand(1,99);
-                        ?>
-                    </td>
+                <tr class="table-row">
+                    <?php
+                    for($i = 0; $i < 2; $i++) {
+                        attributes();
+                    }
+                    ?>
                 </tr>
+                
             </table>
     </body>
     <br>

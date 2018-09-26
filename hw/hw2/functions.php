@@ -1,15 +1,29 @@
 <?php
         function image($random_value) {
             if($random_value == 0) {
-                $symbol = "seven";
+                $symbol = "leo";
             } else if($random_value == 1) {
-                $symbol = "orange";
+                $symbol = "don";
             } else if($random_value == 2) {
-                $symbol = "cherry";
+                $symbol = "raf";
             } else {
-                $symbol = "lemon";
+                $symbol = "mikey";
             }
-            echo "<img id='pic' src=\"img/$symbol.png\" alt='A $symbol' width='70' title='blank' ".ucfirst($symbol).", pic />";
+            echo "<img id='pic' src=\"img/$symbol.jpg\" alt='A $symbol' title='blank' ".ucfirst($symbol).", pic />";
+        }
+        
+        function attributes() {
+            $num = rand(1,99);
+            if($num < 25) {
+                echo "<td style='color: red;'> ".$num." </td>";
+            } else if($num < 50) {
+                echo "<td style='color: orange;'> ".$num." </td>";
+            } else if($num < 75) {
+                echo "<td style='color: blue;'> ".$num." </td>";
+            } else {
+                echo "<td style='color: green;'> ".$num." </td>";
+            }
+                    
         }
 
         

@@ -1,2 +1,26 @@
 [26-Sep-2018 01:24:46 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 25
 [26-Sep-2018 01:24:48 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 25
+[26-Sep-2018 16:58:11 UTC] PHP Fatal error:  Cannot redeclare image() (previously declared in /home/ubuntu/workspace/cst336/hw/hw2/functions.php:2) in /home/ubuntu/workspace/cst336/hw/hw2/functions.php on line 2
+[26-Sep-2018 16:58:11 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:12 UTC] PHP Fatal error:  Cannot redeclare image() (previously declared in /home/ubuntu/workspace/cst336/hw/hw2/functions.php:2) in /home/ubuntu/workspace/cst336/hw/hw2/functions.php on line 2
+[26-Sep-2018 16:58:12 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:42 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:42 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:43 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:43 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:43 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:43 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:43 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:43 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:44 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:44 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
+[26-Sep-2018 16:58:56 UTC] PHP Fatal error:  Call to undefined function attibutes() in /home/ubuntu/workspace/cst336/hw/hw2/index.php on line 49
+[26-Sep-2018 16:58:57 UTC] PHP Stack trace:
+[26-Sep-2018 16:58:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw2/index.php:0
