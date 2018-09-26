@@ -34,9 +34,9 @@
     }
     
     .table-row {
-        height: 48px;
+        height: 408px;
         font-size: 2.3em;
-        font-weight: bold;
+        font-weight: lighter;
     }
     
     
@@ -52,7 +52,7 @@
     
     footer{
         font-family: "Times New Roman", Georgia, Serif;
-        font-size:5.9em;
+        font-size:0.9em;
         margin:0 auto;
         padding-top: 100px;
     }
