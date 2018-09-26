@@ -5,8 +5,8 @@
     }
     
     body {
-        background-color: black;
-        color: white;
+        background-color: aqua;
+        color: black;
         
     }
     
@@ -58,6 +58,6 @@
     }
     
     #pic {
-        padding-bottom: 800px;
+        padding-top: 45px;
     }
     
