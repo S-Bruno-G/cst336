@@ -1,0 +1,79 @@
+    @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+    img {
+        border-radius:20px;
+    }
+    
+    body {
+        background-color: aqua;
+        color: black;
+        
+    }
+    
+    footer, input, body, #output{
+        text-align: center;
+    }
+    
+    #main {
+        font-family: 'Baloo Bhaina', cursive;
+        /*background-image:url("../fifaCard.png");*/
+        /*background-size: auto;*/
+        /*width:200px;*/
+        /*height:300px;*/
+        
+        /*margin:0 auto;*/
+    }
+    body {
+        background-image:url("../fifaCard.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        size: auto;
+        background-size: 30%;
+    }
+    
+    table {
+    alignment-baseline: central;
+    padding-top: 368px;
+    width: 280px;
+    margin: 0px auto;
+    }
+    
+    .table-row {
+        height: 48px;
+        font-size: 2.3em;
+        font-weight: bold;
+    }
+    
+    input{
+        
+        padding-top: 300px;
+        font-size:1.3em;
+        /*background-color: Transparent;*/
+        border:none;
+        outline:none; /*hides button outline when clicking on it*/
+        font-weight:bold;
+        color:aqua;
+        cursor:pointer;
+    }
+    
+    #output{
+     width:600px;   
+     margin:0 auto;
+     position:absolute;
+     
+     top:450px;
+     font-size:1.5em;
+     line-height: .7em;
+    }
+    
+    footer{
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size:.9em;
+        margin:0 auto;
+        padding-top: 100px;
+    }
+    
+    #pic {
+        padding-top: 100px;
+    }
+    
