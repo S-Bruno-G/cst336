@@ -1,0 +1,55 @@
+
+    body{
+        opacity:0.9;
+        width:100%;
+        text-align:center;
+        color:black;
+        
+    }
+    
+    input {
+        font-size: 3em;
+        color: black;
+        font-weight: bold;
+        background-color: lightgray;
+        text-align: center;
+        border-color: black;
+        border-width: 10px;
+        border-style: double;
+        border-radius: 20px;
+        opacity: .75;
+        margin: auto;
+    }
+    
+    #carousel-example-generic {
+         margin: 0 auto;   
+         width: 700px;
+    }
+    
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+        opacity: .75;
+    }
+    
+    #buttons {
+        display: inline-block;
+        text-align: left;
+        background-color: lightgray;
+        border-radius: 10px;
+        height: 80px;
+        width: 120px;
+        padding-top: 10px;
+        padding-left: 10px;
+        opacity: .9;
+    }
+    
+    #dropMenu{
+        display: inline-block;
+        text-align: right;
+        opacity: .9;
+        background-color: lightgray
+        
+    }
