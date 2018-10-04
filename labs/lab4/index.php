@@ -146,6 +146,16 @@ if (!empty($_GET["keyword"]) || !empty($_GET['category'])) {  //checks if the fo
 
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+       <br>
+       <br>
+       <footer>
+            CST336 Internet Programming. 2018
+            &copy; 2018 Santiago Bruno<br />
+            <strong> Disclaimer: </strong> The information in this website is fictitous. It's used for academic purposes only.
+            <br />
+            <img src = "img/csumb_logo.jpg" alt = "CSUMB logo" title = "This is the CSUMB logo" width = "50px" />
+            <img src = "img/buddy.png" alt = "Buddy verification logo" title = "This is the Buddy verification logo" width = "50px" />
+        </footer>
        
     </body>
 </html>
