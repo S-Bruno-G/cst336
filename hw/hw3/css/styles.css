@@ -2,9 +2,9 @@
         background-color: aqua;
         color: black;
         text-align: center;
+        
     }
     
-    /* Style inputs */
     input, select {
         padding: 12px 20px;
         margin: 8px 0;
@@ -13,7 +13,6 @@
         border-radius: 4px;
     }
     
-    /* Style the submit button */
     input[type=submit] {
         width: 20%;
         background-color: #00cc00;
@@ -25,7 +24,6 @@
         cursor: pointer;
     }
     
-    /* Add a background color to the submit button on mouse-over */
     input[type=submit]:hover {
         background-color: #45a049;
     }
@@ -42,6 +40,18 @@
     }
     #title {
         background-color: #ff6666;
+        border-radius: 20px;
+        width: 50%;
+        height: 50%;
+    }
+    
+    #mainR {
+        background-color: #ff9933;
+        border-radius: 20px;
+        width: 50%;
+    }
+    #titleR {
+        background-color: #00cc00;
         border-radius: 20px;
         width: 50%;
         height: 50%;

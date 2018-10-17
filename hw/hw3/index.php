@@ -1,10 +1,27 @@
 <?php
     function validForm() {
         $valid = true;
-        if(!isset($_GET['>than']) || !isset($_GET['squareRoot']) || !isset($_GET['add']) || $_GET['spell']=="") {
+        if($_GET['spell']=="") {
+            echo "<h2 style='color:#ff0000;'>You didn't answer question #1!</h2>";
             $valid = false;
-            
         }
+        if(!isset($_GET['freePoint'])) {
+            echo "<h2 style='color:#ff0000;'>You didn't answer question #2!</h2>";
+            $valid = false;
+        }
+        if(!isset($_GET['>than'])) {
+            echo "<h2 style='color:#ff0000;'>You didn't answer question #3!</h2>";
+            $valid = false;
+        }
+        if(!isset($_GET['squareRoot'])) {
+            echo "<h2 style='color:#ff0000;'>You didn't answer question #4!</h2>";
+            $valid = false;
+        }
+        if(!isset($_GET['add'])) {
+            echo "<h2 style='color:#ff0000;'>You didn't answer question #5!</h2>";
+            $valid = false;
+        }
+        
         return $valid;
     }
 ?>
@@ -25,11 +42,11 @@
         
         <center><div id="main">
             
-            <form action='results.php' method='GET'>
+            <form method='GET'>
                 
                 <label for="q1">1. Type the word "cat".</label>
                 <br>
-                <input type="text" id="q1" name="spell" placeholder="Type here.." required>
+                <input type="text" id="q1" name="spell" placeholder="Type here..">
                 <br>
                 <br>
                 
@@ -40,15 +57,15 @@
                 
                 <label for="q3">3. Which number is greater than 0?</label>
                 <br>
-                a.<input type="radio" id="q3" name=">than" value="-1" required> -1<br>
-                b.<input type="radio" id="q3" name=">than" value="0" required> 0<br>
-                c.<input type="radio" id="q3" name=">than" value="1" required> 1
+                a.<input type="radio" id="q3" name=">than" value="-1"> -1<br>
+                b.<input type="radio" id="q3" name=">than" value="0"> 0<br>
+                c.<input type="radio" id="q3" name=">than" value="1"> 1
                 <br>
                 <br>
                 
                 <label for="q4">4. What is the square root of 16?</label>
                 <br>
-                <select id="q4" name="squareRoot" required>
+                <select id="q4" name="squareRoot">
                 <option value="" disabled selected>-Select your answer-</option>
                 <option value="32">32</option>
                 <option value="4">4</option>
@@ -59,7 +76,7 @@
                 
                 <label for="q5">5. What is 9+10?</label>
                 <br>
-                <select id="q5" name="add" required>
+                <select id="q5" name="add">
                 <option value="" disabled selected>-Select your answer-</option>
                 <option value="21">21</option>
                 <option value="1">1</option>
@@ -69,7 +86,7 @@
                 <br>
                 <br>
                 
-                <input type="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
             </form>
             
         </div></center>
@@ -77,9 +94,14 @@
     </body>
     <br>
     <?php
+    if($_GET['submit'] == "Submit") {
         if(!validForm()) {
-            echo "<h2 style='color:#ff0000;'>Make sure to answer all the questions!</h2>";
+            echo "<br>";
+        } else{
+            echo "<hr width='100%' size='10px' color='#a6a6a6'>";
+            require_once('results.php');
         }
+    }
     ?>
     <hr width='75%' size='10px' color='#a6a6a6'>
     <footer>
