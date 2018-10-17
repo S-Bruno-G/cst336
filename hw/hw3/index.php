@@ -96,7 +96,7 @@
     <?php
     if($_GET['submit'] == "Submit") {
         if(!validForm()) {
-            echo "<br>";
+            echo "<h2>Try again!</h2>";
         } else{
             echo "<hr width='100%' size='10px' color='#a6a6a6'>";
             require_once('results.php');
