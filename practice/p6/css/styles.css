@@ -33,3 +33,11 @@
     label {
         font-weight: bold;
     }
+    
+    table, td {
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        width: 800px;
+        height: 100px;
+    }

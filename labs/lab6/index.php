@@ -34,7 +34,7 @@ function filterProducts() {
     
     if (!empty($product)){
         //This SQL prevents SQL INJECTION by using a named parameter
-         $sql .=  " AND productName LIKE :product";
+         $sql .=  " AND productName LIKE :product OR productDescription LIKE :product";
          $namedParameters[':product'] = "%$product%";
     }
     
@@ -42,6 +42,18 @@ function filterProducts() {
         //This SQL prevents SQL INJECTION by using a named parameter
          $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
+    }
+    
+    if (!empty($_GET['priceFrom'])){
+        //This SQL prevents SQL INJECTION by using a named parameter
+         $sql .=  " AND price >=  :priceFrom";
+          $namedParameters[':priceFrom'] = $_GET['priceFrom'] ;
+    }
+    
+    if (!empty($_GET['priceTo'])){
+        //This SQL prevents SQL INJECTION by using a named parameter
+         $sql .=  " AND price <=  :priceTo";
+          $namedParameters[':priceTo'] = $_GET['priceTo'] ;
     }
     
     //echo $sql;
@@ -67,7 +79,7 @@ function filterProducts() {
     
     foreach ($records as $record) {
         
-        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
+        echo "<a href='purchaseHistory.php?productId=".$record['productId']."'>";
         echo $record['productName'];
         echo "</a> ";
         echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
@@ -83,6 +95,7 @@ function filterProducts() {
 <html>
     <head>
         <title> Lab 6: Ottermart Product Search</title>
+        <link rel='stylesheet' href='css/styles.css' type='text/css' />
     </head>
     <body>
         
@@ -99,8 +112,8 @@ function filterProducts() {
                <?=displayCategories()?>
             </select>
             
-            Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
+            Price: From: <input type="text" name="priceFrom" size="7"/> 
+             To: <input type="text" name="priceTo" size="7"/>
             <br>
             Order By:
             Price <input type="radio" name="orderBy" value="productPrice">
@@ -111,10 +124,24 @@ function filterProducts() {
         <br>
         <hr>
         
-        <?= filterProducts() ?>
+        <?php
+            if($_GET['submit'] == "Search!") {
+                echo "<h2>Search Results </h2>";
+                filterProducts();
+            }
+        ?>
         
     
 
 
     </body>
+    <hr width='75%' size='10px' color='#a6a6a6'>
+    <footer>
+        CST336 Internet Programming. 2018
+        &copy; 2018 Santiago Bruno<br />
+        <strong> Disclaimer: </strong> The information in this website is fictitous. It's used for academic purposes only.
+        <br />
+        <img src = "img/csumb_logo.jpg" alt = "CSUMB logo" title = "This is the CSUMB logo" width = "50px" />
+        <img src = "img/buddy.png" alt = "Buddy verification logo" title = "This is the Buddy verification logo" width = "50px" />
+    </footer>
 </html>
