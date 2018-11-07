@@ -46,7 +46,7 @@
                 
                 <label for="q1">1. Type the word "cat".</label>
                 <br>
-                <input type="text" id="q1" name="spell" placeholder="Type here..">
+                <input type="text" id="q1" name="spell" placeholder="Type here.." required>
                 <br>
                 <br>
                 
@@ -57,7 +57,7 @@
                 
                 <label for="q3">3. Which number is greater than 0?</label>
                 <br>
-                a.<input type="radio" id="q3" name=">than" value="-1"> -1<br>
+                a.<input type="radio" id="q3" name=">than" value="-1" required> -1<br>
                 b.<input type="radio" id="q3" name=">than" value="0"> 0<br>
                 c.<input type="radio" id="q3" name=">than" value="1"> 1
                 <br>
@@ -65,7 +65,7 @@
                 
                 <label for="q4">4. What is the square root of 16?</label>
                 <br>
-                <select id="q4" name="squareRoot">
+                <select id="q4" name="squareRoot" required>
                 <option value="" disabled selected>-Select your answer-</option>
                 <option value="32">32</option>
                 <option value="4">4</option>
