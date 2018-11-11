@@ -1,0 +1,32 @@
+[10-Nov-2018 01:35:45 UTC] PHP Fatal error:  Call to undefined function validate() in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 27
+[10-Nov-2018 01:35:45 UTC] PHP Stack trace:
+[10-Nov-2018 01:35:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[10-Nov-2018 01:35:47 UTC] PHP Fatal error:  Call to undefined function validate() in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 27
+[10-Nov-2018 01:35:47 UTC] PHP Stack trace:
+[10-Nov-2018 01:35:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[10-Nov-2018 02:20:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/inc/functions.php:55
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/inc/functions.php(55): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(10): getProductInfo('')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/inc/functions.php on line 55
+[10-Nov-2018 02:22:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 30
+[10-Nov-2018 02:22:31 UTC] PHP Stack trace:
+[10-Nov-2018 02:22:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:0
+[10-Nov-2018 02:22:31 UTC] PHP   2. updateItems() /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:79
+[10-Nov-2018 02:23:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 30
+[10-Nov-2018 02:23:05 UTC] PHP Stack trace:
+[10-Nov-2018 02:23:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:0
+[10-Nov-2018 02:23:05 UTC] PHP   2. updateItems() /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:79
+[10-Nov-2018 02:24:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:32
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(32): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(80): updateItems()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 32
+[10-Nov-2018 02:24:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php:32
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(32): PDOStatement->execute()
+#1 /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php(80): updateItems()
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/updateProduct.php on line 32

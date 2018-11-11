@@ -15,6 +15,7 @@ validateSession();
 <html>
     <head>
         <title> Admin Main Page </title>
+        
         <style>
             form {
                 display: inline-block;

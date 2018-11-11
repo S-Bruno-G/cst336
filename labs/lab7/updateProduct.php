@@ -6,8 +6,13 @@ $dbConn = startConnection("ottermart");
 include 'inc/functions.php';
 validateSession();
 
+if (isset($_GET['productId'])) {
+  $productInfo = getProductInfo($_GET['productId']);
+ // print_r($productInfo);
+}
 
-if (isset($_GET['updateProduct'])){  //user has submitted update form
+//function updateItems() {
+    if (isset($_GET['updateProduct'])){  //user has submitted update form
     $productName = $_GET['productName'];
     $description = $_GET['description'];
     $price =  $_GET['price'];
@@ -22,19 +27,17 @@ if (isset($_GET['updateProduct'])){  //user has submitted update form
                productImage = :productImage
             WHERE productId = " . $_GET['productId'];
          
+    $np = array();
+    $np[":productName"] = $productName;
+    $np[":productDescription"] = $description;
+    $np[":productImage"] = $image;
+    $np[":price"] = $price;
+    $np[":catId"] = $catId;
     
+    $stmt = $dbConn->prepare($sql);
+    $stmt->execute($np);
 }
-
-
-if (isset($_GET['productId'])) {
-
-  $productInfo = getProductInfo($_GET['productId']);    
-  
- // print_r($productInfo);
-    
-    
-}
-
+//}
 
 ?>
 
@@ -42,6 +45,7 @@ if (isset($_GET['productId'])) {
 <html>
     <head>
         <title> Update Products! </title>
+        <link rel='stylesheet' href='css/styles.css' type='text/css' />
     </head>
     <body>
 
@@ -71,6 +75,10 @@ if (isset($_GET['productId'])) {
            </select> <br />
            Set Image Url: <input type="text" name="productImage" value="<?=$productInfo['productImage']?>"><br>
            <input type="submit" name="updateProduct" value="Update Product">
+        </form>
+        
+        <form action="admin.php">
+            <input type="submit" name="done" value="Done">
         </form>
         
         

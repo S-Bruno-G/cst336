@@ -35,6 +35,7 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
 <html>
     <head>
         <title> Admin Section: Add New Product </title>
+        <link rel='stylesheet' href='css/styles.css' type='text/css' />
     </head>
     <body>
         
@@ -61,6 +62,9 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
            </select> <br />
            Set Image Url: <input type="text" name="productImage"><br>
            <input type="submit" name="addProduct" value="Add Product">
+        </form>
+        <form action="admin.php">
+            <input type="submit" name="done" value="Done">
         </form>
 
     </body>
