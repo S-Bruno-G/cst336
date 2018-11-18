@@ -1,3 +1,7 @@
+#won, #lost {
+    display: none;
+}
+
 #word, #letters {
     padding: 20px 0px;
 }
