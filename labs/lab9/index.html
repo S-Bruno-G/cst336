@@ -11,10 +11,15 @@
             function validateForm() {
                 
                 var username = $("#username").val();
-                
+                var password = $("#password").val();
                 if (username.length < 5 ) {
                     
                     $("#usernameError").html("Error: Username must be at least 5 characters long");
+                    
+                }
+                if (password.length < 3) {
+                    
+                    alert("error");
                     
                 }
                 
@@ -65,9 +70,9 @@
                 Desired Username: <input id="username"  type="text">  <span id="usernameError" class="error" ></span> 
                 <br>
                 
-                Password: <input type="password"><br>
+                Password: <input id="password" type="password"><br>
                 
-                Type Password Again: <input type="password"><br>
+                Type Password Again: <input id="passwordAgain" type="password"><br>
                 
                 <input type="submit" value="Sign up!">
             </fieldset>
