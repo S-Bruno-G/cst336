@@ -1,11 +1,12 @@
-var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
-                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
+$('head').append('<link rel="stylesheet" type="text/css" href="css/styles.css">');
+
+var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
+                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
                 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 var words = [{ word: "snake", hint: "It's a reptile" }, 
              { word: "monkey", hint: "It's a mammal" }, 
              { word: "beetle", hint: "It's an insect" }];
-
 //Variables
 var selectedWord = "";
 var selectedHint = "";
@@ -13,7 +14,6 @@ var board = [];
 var remainingGuesses = 6;
 
 //Listeners
-
 window.onload = startGame();
 
 $("#letters").on("click", ".letter", function(){
@@ -24,7 +24,6 @@ $("#letters").on("click", ".letter", function(){
 $(".replayBtn").on("click", function() {
     location.reload();
 });
-
 
 //Functions
 function startGame() {

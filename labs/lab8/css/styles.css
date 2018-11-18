@@ -1,6 +1,15 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
 #won, #lost {
     display: none;
 }
+
 
 #word, #letters {
     padding: 20px 0px;
@@ -13,17 +22,24 @@
     border: solid;
     border-radius: 5px;
     border-width: 1px;
+    color: red;
 }
 
 #word {
     font-size: 1.8em;
+    color: white;
 }
 
 .hint {
     font-size: 1.8em !important;
+    color: red;
 }
 
 .btn {
     padding: 7px 7px !important;
     margin: 0px 2px;
+}
+
+footer {
+    color: white;
 }
