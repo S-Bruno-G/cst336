@@ -51,16 +51,18 @@
                         data: { "zip": $("#zip").val() },
                         success: function(data,status) {
                            
-                           //alert(data.city);
-                           $("#city").html(data.city);
-                           $("#latitude").html(data.latitude);
-                           $("#longitude").html(data.longitude);
                            if(data == false) {
                                $("#invalidZip").html("Error: Zip code not found");
+                               $("#city").html("");
+                               $("#latitude").html("");
+                               $("#longitude").html("");
                            } else {
                                $("#invalidZip").html("");
+                               $("#city").html(data.city);
+                               $("#latitude").html(data.latitude);
+                               $("#longitude").html(data.longitude);
                            }
-                        
+                           //alert(data.city);
                         },
                         // error: function(XMLHttpRequest, textStatus, errorThrown) { 
                         //     alert("Status: " + textStatus); alert("Error: " + errorThrown); 
