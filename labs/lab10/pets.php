@@ -70,8 +70,8 @@ function getAllPets(){
 	  <?php
 	    $pets = getAllPets();
 	    foreach($pets as $pet) {
-	        echo "<ul><li>Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a>" ."</li>";
-	        echo "<li>Type: ".$pet['type']."</li></ul>";
+	        echo "<ul>Name: " ."<a href='#' class = 'petLink' id = '". $pet['id']. "'>". $pet['name'] ." </a>" ."<br>";
+	        echo "Type: ".$pet['type']."</ul>";
 	    }
 	  ?>
 	  
